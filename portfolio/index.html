@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Syed Safee — Azure Cloud Engineer</title>
+<meta name="description" content="Portfolio of Syed Safee — Azure Cloud Engineer specializing in cloud architecture, migration, security, and multi-cloud infrastructure." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-mark">SS</span>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    <span class="loader-label">BOOTING SYSTEM</span>
+  </div>
+</div>
+
+<!-- Scanline / grid overlay -->
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-mark">S<span>//</span>S</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" data-close><span class="nav-idx">01</span>About</a>
+    <a href="#skills" data-close><span class="nav-idx">02</span>Stack</a>
+    <a href="#work" data-close><span class="nav-idx">03</span>Work</a>
+    <a href="#experience" data-close><span class="nav-idx">04</span>Path</a>
+    <a href="#credentials" data-close><span class="nav-idx">05</span>Credentials</a>
+    <a href="#contact" data-close><span class="nav-idx">06</span>Contact</a>
+  </div>
+  <a href="assets/resume.pdf" download class="nav-cta"><span>Download CV</span></a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <canvas id="orbitCanvas" class="orbit-canvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hud-corner hud-tl"></div>
+  <div class="hud-corner hud-br"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow"><span class="eyebrow-dot"></span>AVAILABLE FOR ENGAGEMENTS — MUMBAI, IN</p>
+
+    <h1 class="hero-name">
+      <span class="hero-name-line">SYED</span>
+      <span class="hero-name-line hero-name-accent">SAFEE</span>
+    </h1>
+
+    <p class="hero-role">Azure Cloud Engineer <span class="hero-role-sep">/</span> Multi-Cloud Infrastructure</p>
+
+    <p class="hero-tagline">
+      Five-plus years architecting, securing, and migrating cloud infrastructure on
+      Azure and AWS — from identity governance to disaster recovery, built to stay
+      up when it matters most.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary"><span>View the work</span></a>
+      <a href="#contact" class="btn btn-ghost"><span>Get in touch</span></a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">5<span class="hero-meta-plus">+</span></span>
+        <span class="hero-meta-label">Years in Azure &amp; cloud infra</span>
+      </div>
+      <div class="hero-meta-divider"></div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">AZ<span class="hero-meta-plus">-104</span></span>
+        <span class="hero-meta-label">Microsoft Certified Associate</span>
+      </div>
+      <div class="hero-meta-divider"></div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">3</span>
+        <span class="hero-meta-label">Enterprise cloud engagements</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-portrait">
+    <div class="portrait-ring"></div>
+    <div class="portrait-frame">
+      <img src="assets/portrait.jpg" alt="Portrait of Syed Safee" id="portraitImg" />
+      <div class="portrait-fallback" id="portraitFallback">
+        <span class="fallback-glyph">◈</span>
+        <span>Drop your photo at<br><code>assets/portrait.jpg</code></span>
+      </div>
+    </div>
+    <div class="portrait-tag">
+      <span class="portrait-tag-dot"></span> Mumbai, India · UTC+5:30
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-line-fill"></div></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="section-head">
+    <span class="section-idx">01 / About</span>
+    <h2 class="section-title">Infrastructure that stays<br class="br-desktop"> invisible — until it saves you.</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>
+        I'm an Azure Cloud Engineer with over five years of hands-on experience managing
+        cloud infrastructure end to end — identity, networking, security, backup and
+        disaster recovery, and everything that keeps a production environment upright.
+      </p>
+      <p>
+        My work spans cross-cloud operations across Azure and AWS: leading migration
+        initiatives, hardening environments with governance and access controls, and
+        building the monitoring and recovery layers that turn an outage into a non-event.
+        I'm comfortable being the person paged at 2 a.m. — and I'd rather build systems
+        that don't need to page anyone at all.
+      </p>
+      <a href="assets/resume.pdf" download class="text-link">Download full résumé →</a>
+    </div>
+
+    <div class="about-cards">
+      <div class="glass-card tilt-card">
+        <span class="glass-card-icon">◈</span>
+        <h3>Identity &amp; Access</h3>
+        <p>Azure AD, MFA, Conditional Access, PIM, SSO, and role-based governance.</p>
+      </div>
+      <div class="glass-card tilt-card">
+        <span class="glass-card-icon">◇</span>
+        <h3>Networking &amp; Security</h3>
+        <p>Hub-spoke topology, VPN &amp; ExpressRoute, Firewall, WAF, Bastion.</p>
+      </div>
+      <div class="glass-card tilt-card">
+        <span class="glass-card-icon">◆</span>
+        <h3>Backup &amp; DR</h3>
+        <p>Azure Site Recovery, Recovery Services Vault, tested failover strategy.</p>
+      </div>
+      <div class="glass-card tilt-card">
+        <span class="glass-card-icon">◉</span>
+        <h3>Migration</h3>
+        <p>AWS-to-Azure and on-prem-to-cloud migrations with minimal downtime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills">
+  <div class="section-head">
+    <span class="section-idx">02 / Stack</span>
+    <h2 class="section-title">The orbit I operate in.</h2>
+    <p class="section-sub">Core disciplines, arranged by how close they sit to daily practice.</p>
+  </div>
+
+  <div class="orbit-map" id="orbitMap">
+    <div class="orbit-map-core">
+      <span>AZURE<br>CLOUD</span>
+    </div>
+    <div class="orbit-ring orbit-ring-1"></div>
+    <div class="orbit-ring orbit-ring-2"></div>
+    <div class="orbit-ring orbit-ring-3"></div>
+
+    <div class="orbit-node" data-ring="1" data-angle="15">Azure IaaS</div>
+    <div class="orbit-node" data-ring="1" data-angle="135">Azure PaaS</div>
+    <div class="orbit-node" data-ring="1" data-angle="255">Networking</div>
+
+    <div class="orbit-node" data-ring="2" data-angle="0">Azure AD</div>
+    <div class="orbit-node" data-ring="2" data-angle="60">Key Vault</div>
+    <div class="orbit-node" data-ring="2" data-angle="120">Load Balancer</div>
+    <div class="orbit-node" data-ring="2" data-angle="180">Site Recovery</div>
+    <div class="orbit-node" data-ring="2" data-angle="240">Monitor &amp; KQL</div>
+    <div class="orbit-node" data-ring="2" data-angle="300">VPN / ExpressRoute</div>
+
+    <div class="orbit-node" data-ring="3" data-angle="20">AWS</div>
+    <div class="orbit-node" data-ring="3" data-angle="65">Terraform</div>
+    <div class="orbit-node" data-ring="3" data-angle="110">Kubernetes</div>
+    <div class="orbit-node" data-ring="3" data-angle="155">PowerShell</div>
+    <div class="orbit-node" data-ring="3" data-angle="200">Docker</div>
+    <div class="orbit-node" data-ring="3" data-angle="245">Azure DevOps</div>
+    <div class="orbit-node" data-ring="3" data-angle="290">GitHub</div>
+    <div class="orbit-node" data-ring="3" data-angle="335">Linux</div>
+  </div>
+</section>
+
+<!-- ============ WORK / PROJECTS ============ -->
+<section class="section projects" id="work">
+  <div class="section-head">
+    <span class="section-idx">03 / Selected Work</span>
+    <h2 class="section-title">Systems worth talking about.</h2>
+  </div>
+
+  <div class="project-list">
+
+    <article class="project-card tilt-card">
+      <div class="project-visual" data-glyph="⬡"></div>
+      <div class="project-body">
+        <span class="project-tag">Migration · Kiya.ai, 2025</span>
+        <h3>AWS-to-Azure migration &amp; cost-optimized decommission</h3>
+        <p>Strategized and executed an AWS-to-Azure migration for virtual machines and
+          services with minimal downtime, then archived legacy EC2 data to Amazon S3
+          Glacier Deep Archive before decommissioning — cutting storage cost without
+          losing the data trail.</p>
+        <div class="project-stack"><span>Azure Migrate</span><span>AWS EC2</span><span>S3 Glacier</span></div>
+      </div>
+    </article>
+
+    <article class="project-card tilt-card">
+      <div class="project-visual" data-glyph="⬢"></div>
+      <div class="project-body">
+        <span class="project-tag">Backup &amp; Recovery · LTIMindtree, 2024</span>
+        <h3>Azure Backup &amp; Recovery specialist — Microsoft project</h3>
+        <p>Diagnosed backup and recovery issues for enterprise clients using Kusto
+          Query Language to trace root causes in Azure environments, then executed
+          restore strategies engineered to minimize downtime and data loss.</p>
+        <div class="project-stack"><span>Azure Backup</span><span>KQL</span><span>Log Analytics</span></div>
+      </div>
+    </article>
+
+    <article class="project-card tilt-card">
+      <div class="project-visual" data-glyph="◈"></div>
+      <div class="project-body">
+        <span class="project-tag">Architecture · Jetto Technologies, 2020–24</span>
+        <h3>Enterprise landing zone &amp; hub-spoke network</h3>
+        <p>Deployed Azure Landing Zones as a standardized foundation for workloads,
+          implemented hub-spoke network topology with Firewall, Bastion, and WAF,
+          and hardened identity with Conditional Access and Azure AD Connect.</p>
+        <div class="project-stack"><span>Landing Zone</span><span>Hub-Spoke</span><span>Azure AD</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="section-head">
+    <span class="section-idx">04 / Path</span>
+    <h2 class="section-title">How I got to this orbit.</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <span class="timeline-year">Feb 2025 — Present · Navi Mumbai</span>
+      <h3>Associate Consultant of Cloud, Kiya.ai</h3>
+      <p>Managing and administering Azure infrastructure across VMs, storage, and
+        networking; led AWS-to-Azure migration and cross-cloud operations; conducted
+        RCA on critical production issues.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <span class="timeline-year">Jan 2024 — Nov 2024 · Hyderabad</span>
+      <h3>Azure Cloud Engineer (ABRS), LTIMindtree</h3>
+      <p>Azure Backup and Recovery Specialist on a Microsoft project — diagnosed
+        client issues with KQL, executed backup procedures, and specialized in
+        Azure Site Recovery for disaster recovery planning.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <span class="timeline-year">Oct 2020 — Jan 2024 · Remote</span>
+      <h3>Azure Cloud Administrator, Jetto Technologies and Consultancies</h3>
+      <p>Owned Azure AD tenant management, network architecture, security, and cost
+        governance across IaaS and PaaS resources for four years — the foundation
+        everything since has been built on.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="section credentials" id="credentials">
+  <div class="section-head">
+    <span class="section-idx">05 / Credentials</span>
+    <h2 class="section-title">Certifications &amp; education.</h2>
+  </div>
+
+  <div class="credentials-grid">
+    <div class="glass-card cred-card">
+      <span class="glass-card-icon">◆</span>
+      <h3>Microsoft Certified: Azure Administrator Associate</h3>
+      <p>AZ-104 — validated expertise across identity, storage, compute, and networking on Azure.</p>
+    </div>
+    <div class="glass-card cred-card">
+      <span class="glass-card-icon">◈</span>
+      <h3>BCS — Bachelor of Computer Science</h3>
+      <p>Dr. Babasaheb Ambedkar Marathwada University, Aurangabad, Maharashtra · 2021</p>
+    </div>
+    <div class="glass-card cred-card">
+      <span class="glass-card-icon">◉</span>
+      <h3>Languages</h3>
+      <p>English · Hindi</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-panel glass-card">
+    <span class="section-idx">06 / Contact</span>
+    <h2 class="contact-title">Building something that<br>needs to stay up?</h2>
+    <p class="contact-sub">Open to Azure &amp; multi-cloud engineering roles and select consulting engagements.</p>
+
+    <div class="contact-links">
+      <a href="mailto:syedsafee@outlook.in" class="contact-link">
+        <span>Email</span><strong>syedsafee@outlook.in</strong>
+      </a>
+      <a href="tel:+918446385557" class="contact-link">
+        <span>Phone</span><strong>+91 84463 85557</strong>
+      </a>
+      <a href="https://www.linkedin.com/in/syedsafee" class="contact-link" target="_blank" rel="noopener">
+        <span>LinkedIn</span><strong>/in/syedsafee</strong>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Syed Safee</span>
+    <span>Built with Three.js · Deployed on GitHub Pages</span>
+  </footer>
+</section>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
