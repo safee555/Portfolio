@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Syed Safee — Senior Cloud Engineer</title>
+<meta name="description" content="Portfolio of Syed Safee — Senior Cloud Engineer specializing in AWS, Azure, and GCP infrastructure, migration, and security." />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Depth backdrop + cursor glow -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Intro curtain -->
+<div class="curtain" id="curtain">
+  <span class="curtain-mark">SS</span>
+</div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-mark">Syed Safee</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" data-close>About</a>
+    <a href="#stack" data-close>Stack</a>
+    <a href="#work" data-close>Work</a>
+    <a href="#path" data-close>Path</a>
+    <a href="#credentials" data-close>Credentials</a>
+    <a href="#contact" data-close>Contact</a>
+  </div>
+  <a href="assets/resume.pdf" download class="nav-cta">Résumé ↓</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <canvas id="globeCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-availability">
+      <span class="doc-tag-dot"></span>
+      AVAILABLE FOR ENGAGEMENTS <span>—</span> MUMBAI, IN
+    </div>
+
+    <div class="hero-title-wrap">
+      <h1 class="hero-name" aria-label="Syed Safee">
+        <span class="hero-line hero-line-syed" data-word="SYED">SYED</span>
+        <span class="hero-line hero-line-safee" data-word="SAFEE">SAFEE</span>
+      </h1>
+
+      <div class="hero-photo-integrated" aria-hidden="true">
+        <img src="assets/portrait.png" alt="" id="portraitImg" />
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <p class="hero-role">SENIOR CLOUD ENGINEER <span class="hero-role-sep">/</span> AWS · AZURE · GCP</p>
+      <p class="hero-tagline">
+        Five-plus years designing, securing, and migrating infrastructure across Azure and AWS,
+        with working fluency in GCP. I build resilient systems, cloud architectures, and recovery
+        layers designed to stay quiet when production gets loud.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary magnetic"><span>View the work</span></a>
+        <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>Experience</dt><dd><span class="counter" data-count="5" data-suffix="+">0</span> yrs</dd></div>
+        <div><dt>Certified</dt><dd>AZ&#8209;104</dd></div>
+        <div><dt>Production projects</dt><dd><span class="counter" data-count="4">0</span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="hero-orbit-horizon" aria-hidden="true"></div>
+  <div class="scroll-cue"><span>Scroll</span><span class="scroll-cue-line"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="section-head">
+    <span class="section-tag">About</span>
+    <h2 class="section-title">Infrastructure that stays invisible — until it saves you.</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>
+        I'm a Senior Cloud Engineer with over five years of hands-on experience managing
+        infrastructure end to end — identity, networking, security, backup and disaster
+        recovery, and everything that keeps a production environment upright, primarily
+        across Azure and AWS.
+      </p>
+      <p>
+        My work spans cross-cloud operations: leading migration initiatives, hardening
+        environments with governance and access controls, and building the monitoring
+        and recovery layers that turn an outage into a non-event. I bring working
+        fluency in GCP alongside deep Azure/AWS expertise, and I'm comfortable being
+        the person paged at 2 a.m. — though I'd rather build systems that don't need
+        to page anyone at all.
+      </p>
+      <a href="assets/resume.pdf" download class="text-link">Download full résumé →</a>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-card">
+        <span class="spec-index">A</span>
+        <h3>Identity &amp; Access</h3>
+        <p>Azure AD, MFA, Conditional Access, PIM, SSO, and role-based governance.</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-index">B</span>
+        <h3>Networking &amp; Security</h3>
+        <p>Hub-spoke topology, VPN &amp; ExpressRoute, Firewall, WAF, Bastion.</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-index">C</span>
+        <h3>Backup &amp; DR</h3>
+        <p>Azure Site Recovery, Recovery Services Vault, tested failover strategy.</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-index">D</span>
+        <h3>Migration</h3>
+        <p>AWS-to-Azure and on-prem-to-cloud migrations with minimal downtime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section stack" id="stack">
+  <div class="section-head">
+    <span class="section-tag">Stack</span>
+    <h2 class="section-title">The tools in motion.</h2>
+    <p class="section-sub">Core platforms and the tooling that keeps them running.</p>
+  </div>
+
+  <div class="marquee-wrap">
+    <div class="marquee marquee-left">
+      <div class="marquee-track">
+        <div class="tech-pill"><img src="assets/icons/Azure.png" alt="" loading="lazy"><span>Azure</span></div>
+        <div class="tech-pill"><img src="assets/icons/AWS.png" alt="" loading="lazy"><span>AWS</span></div>
+        <div class="tech-pill"><img src="assets/icons/Google_Cloud.png" alt="" loading="lazy"><span>GCP</span></div>
+        <div class="tech-pill"><img src="assets/icons/Kubernetes.png" alt="" loading="lazy"><span>Kubernetes</span></div>
+        <div class="tech-pill"><img src="assets/icons/Docker.png" alt="" loading="lazy"><span>Docker</span></div>
+        <div class="tech-pill"><img src="assets/icons/HashiCorp_Terraform.png" alt="" loading="lazy"><span>Terraform</span></div>
+        <div class="tech-pill"><img src="assets/icons/Azure_Devops.png" alt="" loading="lazy"><span>Azure DevOps</span></div>
+        <!-- duplicate for seamless loop -->
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Azure.png" alt="" loading="lazy"><span>Azure</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/AWS.png" alt="" loading="lazy"><span>AWS</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Google_Cloud.png" alt="" loading="lazy"><span>GCP</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Kubernetes.png" alt="" loading="lazy"><span>Kubernetes</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Docker.png" alt="" loading="lazy"><span>Docker</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/HashiCorp_Terraform.png" alt="" loading="lazy"><span>Terraform</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Azure_Devops.png" alt="" loading="lazy"><span>Azure DevOps</span></div>
+      </div>
+    </div>
+
+    <div class="marquee marquee-right">
+      <div class="marquee-track">
+        <div class="tech-pill"><img src="assets/icons/GitHub.png" alt="" loading="lazy"><span>GitHub</span></div>
+        <div class="tech-pill"><img src="assets/icons/Git.png" alt="" loading="lazy"><span>Git</span></div>
+        <div class="tech-pill"><img src="assets/icons/Powershell.png" alt="" loading="lazy"><span>PowerShell</span></div>
+        <div class="tech-pill"><img src="assets/icons/Linux.png" alt="" loading="lazy"><span>Linux</span></div>
+        <div class="tech-pill"><img src="assets/icons/Grafana.png" alt="" loading="lazy"><span>Grafana</span></div>
+        <div class="tech-pill"><img src="assets/icons/Apache_Airflow.png" alt="" loading="lazy"><span>Airflow</span></div>
+        <!-- duplicate for seamless loop -->
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/GitHub.png" alt="" loading="lazy"><span>GitHub</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Git.png" alt="" loading="lazy"><span>Git</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Powershell.png" alt="" loading="lazy"><span>PowerShell</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Linux.png" alt="" loading="lazy"><span>Linux</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Grafana.png" alt="" loading="lazy"><span>Grafana</span></div>
+        <div class="tech-pill" aria-hidden="true"><img src="assets/icons/Apache_Airflow.png" alt="" loading="lazy"><span>Airflow</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / PROJECT EXPERIENCE ============ -->
+<section class="section work" id="work">
+  <div class="section-head">
+    <span class="section-tag">Project Experience</span>
+    <h2 class="section-title">Production systems I help keep alive.</h2>
+    <p class="section-sub">Real cloud infrastructure work across banking, metaverse, VR and public digital experiences.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card project-card-featured">
+      <div class="project-card-top">
+        <div class="project-logo project-logo-light"><img src="assets/logos/Absa_logo.png" alt="ABSA logo" loading="lazy" /></div>
+        <div class="project-heading">
+          <span class="project-kicker">ABSA Bank · South Africa</span>
+          <h3>ABSAVerse — Metaverse Banking Platform</h3>
+          <span class="project-role">Azure Cloud Engineer</span>
+        </div>
+        <span class="project-index">01</span>
+      </div>
+      <p class="project-summary">ABSAVerse is ABSA Bank South Africa’s immersive metaverse banking experience — a virtual 3D branch where members of the public can explore digital banking spaces, interact with virtual banking agents, discover products and receive support through an engaging online environment.</p>
+      <div class="project-architecture">
+        <span>Fortinet Firewall</span><i>→</i><span>Azure Load Balancer</span><i>→</i><span>VMSS</span><i>→</i><span>Azure SQL + Blob</span>
+      </div>
+      <div class="project-tags"><span>VMSS</span><span>FortiGate</span><span>Azure SQL</span><span>Blob Storage</span><span>Managed Identity</span><span>Auto Scale</span></div>
+      <button type="button" class="project-toggle" aria-expanded="false"><span class="project-toggle-label">View project details</span><span>＋</span></button>
+      <div class="project-details">
+        <div class="project-detail-grid">
+          <div><strong>What it is</strong><p>A metaverse-style digital banking environment that gives customers an immersive way to discover banking products, interact with virtual agents and access support experiences without being physically inside a branch.</p></div>
+          <div><strong>Public use</strong><p>Customers can enter the virtual environment, explore a digital branch, learn about products and engage with virtual banking experiences. The platform is designed for large public traffic during campaigns and product launches.</p></div>
+          <div><strong>My contribution</strong><p>Designed and managed VNets, subnet structure, NSGs, UDRs, FortiGate policies, NAT rules, Azure Load Balancer, VM Scale Sets, Azure SQL Database and Storage, with production monitoring and troubleshooting.</p></div>
+          <div><strong>Scale, security &amp; outcomes</strong><p>Configured 4 initial VMSS instances with 2–15 capacity and CPU-based scaling at 70%/30%. Used Managed Identity for Blob access, moved large media away from VM bandwidth and helped the platform support thousands of concurrent users.</p></div>
+        </div>
+        <a class="project-link" href="https://absaverse.absa.africa/Absaverse" target="_blank" rel="noopener noreferrer">Open project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-top">
+        <div class="project-logo project-logo-light"><img src="assets/logos/akashadarshan.png" alt="Akashdarshan logo" loading="lazy" /></div>
+        <div class="project-heading">
+          <span class="project-kicker">Akashaverse</span>
+          <h3>Akashdarshan — Virtual Spiritual Experience</h3>
+          <span class="project-role">Azure Cloud Engineer</span>
+        </div>
+        <span class="project-index">02</span>
+      </div>
+      <p class="project-summary">Akashdarshan is a VR-enabled immersive spiritual platform that lets devotees virtually experience sacred temples, attend poojas and take guided spiritual journeys remotely. The experience can also be delivered through physical VR booths for a more immersive temple visit.</p>
+      <div class="project-architecture"><span>Application Gateway WAF</span><i>→</i><span>VMSS</span><i>→</i><span>Azure SQL + Storage</span></div>
+      <div class="project-tags"><span>App Gateway</span><span>WAF</span><span>VMSS</span><span>SSL</span><span>Azure SQL</span><span>Storage</span></div>
+      <button type="button" class="project-toggle" aria-expanded="false"><span class="project-toggle-label">View project details</span><span>＋</span></button>
+      <div class="project-details">
+        <div class="project-detail-grid">
+          <div><strong>What it is</strong><p>A digital spiritual experience combining web, 3D and VR content so devotees can explore virtual temples, participate in pooja experiences and connect with sacred destinations remotely.</p></div>
+          <div><strong>Public use</strong><p>People who cannot travel to a temple can access the digital experience remotely, while physical VR booths can provide visitors with a more immersive representation of the temple journey.</p></div>
+          <div><strong>My contribution</strong><p>Designed and supported Azure infrastructure using Application Gateway WAF, HTTPS listeners, backend pools, health probes, routing, SSL certificates, VMSS, Azure SQL and Storage.</p></div>
+          <div><strong>Challenge &amp; outcome</strong><p>Large VR assets increased application load times. Improved the storage architecture, media delivery and compression strategy to reduce loading overhead and improve the end-user experience.</p></div>
+        </div>
+        <a class="project-link" href="https://akashadarshan.akashaverse.in/" target="_blank" rel="noopener noreferrer">Open project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-top">
+        <div class="project-logo project-logo-light"><img src="assets/logos/qib.png" alt="Qatar Islamic Bank UK logo" loading="lazy" /></div>
+        <div class="project-heading">
+          <span class="project-kicker">Qatar Islamic Bank UK</span>
+          <h3>Online Banking Portal Management</h3>
+          <span class="project-role">Production Cloud Operations</span>
+        </div>
+        <span class="project-index">03</span>
+      </div>
+      <p class="project-summary">QIB UK’s online banking portal provides customers with secure digital access to banking services and account-related transactions. I support the production cloud infrastructure behind this customer-facing banking workload, with a strong focus on security, availability and incident response.</p>
+      <div class="project-architecture"><span>Fortinet Firewall</span><i>→</i><span>Application Gateway</span><i>→</i><span>Azure VMs</span><i>→</i><span>Storage</span></div>
+      <div class="project-tags"><span>FortiGate</span><span>App Gateway</span><span>SSL/TLS</span><span>VPN</span><span>Monitoring</span><span>RCA</span></div>
+      <button type="button" class="project-toggle" aria-expanded="false"><span class="project-toggle-label">View project details</span><span>＋</span></button>
+      <div class="project-details">
+        <div class="project-detail-grid">
+          <div><strong>What it is</strong><p>A customer-facing online banking portal used by QIB UK customers for secure digital banking access and banking transactions through the web.</p></div>
+          <div><strong>Public use</strong><p>Customers can use the portal remotely rather than visiting a physical branch, so reliable connectivity, secure access and certificate validity are critical to the service.</p></div>
+          <div><strong>My contribution</strong><p>Administered Fortinet firewall rules and IPS policies, SSL renewals, VPN connectivity, Application Gateway, Azure VMs, monitoring, production changes and incident response.</p></div>
+          <div><strong>Example RCA &amp; resolution</strong><p>Investigated intermittent access failures across App Gateway, firewall, backend health and certificates. Traced one incident to an expired backend application certificate, replaced it, updated bindings and restored service with minimal downtime.</p></div>
+        </div>
+        <a class="project-link" href="https://mb.qibukplc.com/QIB/" target="_blank" rel="noopener noreferrer">Open project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-top">
+        <div class="project-logo project-logo-light"><img src="assets/logos/Ayodhya.png" alt="Ayodhya Nagari logo" loading="lazy" /></div>
+        <div class="project-heading">
+          <span class="project-kicker">BharatMeta</span>
+          <h3>Ayodhya Nagari — Multi-site Platform</h3>
+          <span class="project-role">Azure Infrastructure &amp; Application Gateway</span>
+        </div>
+        <span class="project-index">04</span>
+      </div>
+      <p class="project-summary">Ayodhya Nagari is a public-facing digital experience associated with Ayodhya-related destinations, information and experiences. I supported the Azure edge architecture that securely serves multiple live domains from a shared Application Gateway.</p>
+      <div class="project-tags"><span>App Gateway</span><span>SSL</span><span>DNS</span><span>Routing</span><span>Backend Pools</span></div>
+      <button type="button" class="project-toggle" aria-expanded="false"><span class="project-toggle-label">View project details</span><span>＋</span></button>
+      <div class="project-details">
+        <div class="project-detail-grid">
+          <div><strong>What it is</strong><p>A public-facing digital platform designed to help people discover Ayodhya-related destinations, information and digital experiences online.</p></div>
+          <div><strong>Public use</strong><p>Visitors can access the experience remotely to explore information and digital content before or during a visit, without needing direct access to the underlying cloud infrastructure.</p></div>
+          <div><strong>My contribution</strong><p>Supported Azure Application Gateway listeners, backend pools, host-based routing, SSL implementation and DNS operations across the live domains.</p></div>
+          <div><strong>Architecture &amp; outcome</strong><p>Used a shared Application Gateway edge layer to route each hostname to the appropriate backend while centralizing secure HTTPS access and certificate handling.</p></div>
+        </div>
+        <div class="project-url-list"><span>ayodhyanagari.bharatmeta.in</span><span>aydn.bharatmeta.in</span></div>
+      </div>
+ <!-- ADD THE URL HERE -->
+    <a
+      class="project-link"
+      href="https://ayodhyanagari.bharatmeta.in/ayodhyanagari/#/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Open project ↗
+    </a>
+  </div>
+
+    </article>
+
+  </div>
+
+  <div class="project-capability-strip" aria-label="Enterprise skills demonstrated across projects">
+    <span>Azure VM / VMSS</span><span>Application Gateway</span><span>Azure SQL</span><span>Azure Storage</span><span>Fortinet</span><span>Networking</span><span>SSL/TLS</span><span>Managed Identity</span><span>Monitoring</span><span>RCA</span><span>High Availability</span><span>Auto Scaling</span>
+  </div>
+</section>
+
+<!-- ============ PATH (EXPERIENCE) ============ -->
+<section class="section path" id="path">
+  <div class="section-head">
+    <span class="section-tag">Path</span>
+    <h2 class="section-title">The roles behind the projects.</h2>
+  </div>
+
+  <div class="record-list">
+
+    <article class="record">
+      <div class="record-head">
+        <span class="record-logo"><img src="assets/logos/kiya.jpg" alt="Kiya.ai logo" loading="lazy" /></span>
+        <div>
+          <h3>Associate Consultant of Cloud</h3>
+          <span class="record-meta">Kiya.ai · Feb 2025 — Present · Navi Mumbai</span>
+        </div>
+      </div>
+      <p>Managing and administering Azure infrastructure across VMs, storage, and
+        networking; led AWS-to-Azure migration and cross-cloud operations; conducted
+        RCA on critical production issues.</p>
+      <button type="button" class="record-toggle" aria-expanded="false">
+        <span class="record-toggle-label">Read more</span><span class="record-toggle-icon">＋</span>
+      </button>
+      <div class="record-details">
+        <ul>
+          <li>Managed and administered Azure infrastructure including Virtual Machines, Storage Accounts, and networking components.</li>
+          <li>Proactively troubleshot and resolved issues related to VM availability, storage, and networking configurations.</li>
+          <li>Handled patch management for Windows and Linux servers to maintain system integrity and security compliance.</li>
+          <li>Participated in cross-cloud operations, managing AWS infrastructure alongside Azure services.</li>
+          <li>Led the AWS-to-Azure migration initiative — strategized and executed migration plans for VMs and services with minimal downtime.</li>
+          <li>Recommended and implemented a cost-optimized solution archiving legacy AWS EC2 data to S3 Glacier Deep Archive before decommissioning.</li>
+          <li>Conducted RCA for a critical web application issue where APIs were unexpectedly stopping — traced it to idle timeout settings and resolved it by reconfiguring timeouts.</li>
+          <li>Contributed to data protection strategy using Azure Backup and Recovery solutions.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="record-head">
+        <span class="record-logo"><img src="assets/logos/ltimindtree.png" alt="LTIMindtree logo" loading="lazy" /></span>
+        <div>
+          <h3>Azure Cloud Engineer (ABRS)</h3>
+          <span class="record-meta">LTIMindtree · Jan 2024 — Nov 2024 · Hyderabad</span>
+        </div>
+      </div>
+      <p>Azure Backup and Recovery Specialist on a Microsoft project — diagnosed
+        client issues with KQL, executed backup procedures, and specialized in
+        Azure Site Recovery for disaster recovery planning.</p>
+      <button type="button" class="record-toggle" aria-expanded="false">
+        <span class="record-toggle-label">Read more</span><span class="record-toggle-icon">＋</span>
+      </button>
+      <div class="record-details">
+        <ul>
+          <li>Addressed client backup and recovery issues promptly using deep Azure Backup expertise on a Microsoft project.</li>
+          <li>Collaborated closely with clients to understand backup/recovery requirements and provide tailored solutions.</li>
+          <li>Troubleshot issues using thorough analysis and diagnostic techniques to identify root causes.</li>
+          <li>Used Kusto Query Language (KQL) to analyze logs and pinpoint underlying issues in Azure environments.</li>
+          <li>Executed backup procedures on the Azure platform, ensuring data integrity and reliability.</li>
+          <li>Implemented efficient restore strategies to swiftly recover data, minimizing downtime and data loss.</li>
+          <li>Specialized in Azure Site Recovery (ASR) for replication and disaster recovery planning, including regular failover testing.</li>
+          <li>Used Azure Migrate to facilitate smooth migration of on-premises workloads into Azure.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="record">
+      <div class="record-head">
+        <span class="record-logo"><img src="assets/logos/jetto.svg" alt="Jetto Technologies logo" loading="lazy" /></span>
+        <div>
+          <h3>Azure Cloud Administrator</h3>
+          <span class="record-meta">Jetto Technologies and Consultancies · Oct 2020 — Jan 2024 · Remote</span>
+        </div>
+      </div>
+      <p>Owned Azure AD tenant management, network architecture, security, and cost
+        governance across IaaS and PaaS resources for four years — the foundation
+        everything since has been built on.</p>
+      <button type="button" class="record-toggle" aria-expanded="false">
+        <span class="record-toggle-label">Read more</span><span class="record-toggle-icon">＋</span>
+      </button>
+      <div class="record-details">
+        <ul>
+          <li>Orchestrated Azure AD tenant management — MFA, Identity Governance, Conditional Access, custom domains, and Azure AD Connect sync.</li>
+          <li>Administered users, groups, licenses, and roles, ensuring proper access controls across the organization.</li>
+          <li>Deployed Virtual Network solutions: VNet peering, subnets, NSGs, and NAT Gateways for secure inter-resource communication.</li>
+          <li>Implemented Private and Public DNS zones for internal and external domain resolution.</li>
+          <li>Deployed and scaled Windows/Linux VMs and Virtual Machine Scale Sets for auto-scaling workloads.</li>
+          <li>Implemented high availability with Load Balancers, Application Gateway, and Web Application Firewall.</li>
+          <li>Hardened the environment with Azure Firewall, Key Vault, and disk encryption; deployed standardized Azure Landing Zones.</li>
+          <li>Designed a hub-spoke network topology with VPN/ExpressRoute connectivity, Bastion Hosts, and optimized route tables.</li>
+          <li>Built disaster recovery solutions with Recovery Services Vault, and automated routine administration with PowerShell.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="section credentials" id="credentials">
+  <div class="section-head">
+    <span class="section-tag">Credentials</span>
+    <h2 class="section-title">Certifications &amp; education.</h2>
+  </div>
+
+  <div class="spec-grid spec-grid-3">
+    <a href="https://learn.microsoft.com/en-us/users/syedsafee-6288/credentials/ef097d61435ecbcc"
+       target="_blank" rel="noopener noreferrer" class="spec-card spec-card-link"
+       aria-label="View Microsoft Certified: Azure Administrator Associate credential on Microsoft Learn (opens in a new tab)">
+      <span class="spec-index">01</span>
+      <h3>Microsoft Certified: Azure Administrator Associate</h3>
+      <p>AZ-104 — validated expertise across identity, storage, compute, and networking on Azure.</p>
+      <span class="spec-cta">View credential ↗</span>
+    </a>
+    <div class="spec-card">
+      <span class="spec-index">02</span>
+      <h3>BCS — Bachelor of Computer Science</h3>
+      <p>Dr. Babasaheb Ambedkar Marathwada University, Aurangabad, Maharashtra · 2021</p>
+    </div>
+    <div class="spec-card">
+      <span class="spec-index">03</span>
+      <h3>Languages</h3>
+      <p>English · Hindi</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-panel">
+    <span class="section-tag">Contact</span>
+    <h2 class="contact-title">Building something that<br>needs to stay up?</h2>
+    <p class="contact-sub">Open to Senior Cloud Engineer roles across AWS, Azure, and GCP, plus select consulting engagements.</p>
+
+    <div class="contact-links">
+      <a href="mailto:syedsafee@outlook.in" class="contact-link"><span>Email</span><strong>syedsafee@outlook.in</strong></a>
+      <a href="tel:+919922275183" class="contact-link"><span>Phone</span><strong>+91 99222 75183</strong></a>
+      <a href="https://www.linkedin.com/in/syedsafee" class="contact-link" target="_blank" rel="noopener"><span>LinkedIn</span><strong>/in/syedsafee</strong></a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Syed Safee</span>
+    <span>Deployed on GitHub Pages</span>
+  </footer>
+</section>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
